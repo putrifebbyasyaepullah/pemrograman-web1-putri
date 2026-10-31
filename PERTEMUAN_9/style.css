@@ -1,0 +1,234 @@
+/* =========================
+   PENGATURAN DASAR
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f6fb;
+    color: #111;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    background-color: #2d6aa5;
+    border-top: 5px solid #245889;
+}
+
+.judul {
+    height: 40px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 6px;
+}
+
+
+/* =========================
+   NAVIGASI
+   ========================= */
+
+nav {
+    height: 98px;
+    background-color: #dbe9f9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 36px;
+}
+
+nav a {
+    color: #182b43;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   KONTEN UTAMA
+   ========================= */
+
+main {
+    padding: 30px 0;
+}
+
+.container {
+    width: 88%;
+    max-width: 660px;
+    margin: 0 auto;
+
+    background-color: white;
+
+    border: 1px solid #d6dce3;
+
+    padding: 45px 30px 50px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   JUDUL PROFIL
+   ========================= */
+
+.container h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    color: #2d67a0;
+
+    font-size: 26px;
+}
+
+
+/* =========================
+   FOTO
+   ========================= */
+
+.foto {
+    width: 190px;
+    height: 190px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #2d6aa5;
+
+    display: block;
+
+    margin: 0 auto 20px;
+}
+
+
+/* =========================
+   NAMA DAN PROGRAM STUDI
+   ========================= */
+
+.container h2 {
+    color: #2d67a0;
+
+    font-size: 26px;
+
+    margin: 10px 0 20px;
+}
+
+.prodi {
+    color: #777;
+
+    font-size: 16px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   GARIS
+   ========================= */
+
+hr {
+    border: 0;
+
+    border-top: 1px solid #cfcfcf;
+
+    margin: 20px 0;
+}
+
+
+/* =========================
+   JUDUL SECTION
+   ========================= */
+
+section {
+    margin-top: 20px;
+}
+
+section h3 {
+    background-color: #d6e7fa;
+
+    color: #243b55;
+
+    font-size: 18px;
+
+    padding: 10px;
+
+    margin: 0 0 20px;
+}
+
+
+/* =========================
+   DATA MAHASISWA
+   ========================= */
+
+.data p {
+    margin: 0 0 24px;
+
+    font-size: 16px;
+}
+
+.data b {
+    font-weight: bold;
+}
+
+
+/* =========================
+   TENTANG SAYA
+   ========================= */
+
+.tentang {
+    font-size: 16px;
+
+    line-height: 1.65;
+
+    margin: 0 5px 25px;
+}
+
+
+/* =========================
+   HOBI DAN KEAHLIAN
+   ========================= */
+
+section ul {
+    text-align: left;
+
+    margin-top: 0;
+
+    padding-left: 40px;
+
+    font-size: 16px;
+}
+
+section ul li {
+    margin-bottom: 2px;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: #2d6aa5;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    font-size: 16px;
+}

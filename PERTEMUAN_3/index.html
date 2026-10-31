@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 3 - Portal Mahasiswa</title>
+</head>
+<body>
+
+    <header>
+        <h1>Portal Mahasiswa Sistem informasi</h1>
+        <p>Universitas Pamulang</p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#profil">Profil</a>
+            <a href="#akademik">Akademik</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profil">
+            <h2>Profil Mahasiswa</h2>
+            <img src="profile.png" alt="Foto Profil" width="120">
+            <p>Nama: Budi Saputra</p>
+            <p>NIM: 12345678</p>
+            <p>Program Studi: Teknik Informatika</p>
+        </section>
+
+        <section id="akademik">
+            <h2>Data Akademik</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Mata Kuliah</th>
+                        <th>SKS</th>
+                        <th>Nilai</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Pemrograman Web</td>
+                        <td>3</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Basis Data</td>
+                        <td>3</td>
+                        <td>A-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="kegiatan">
+            <h2>Kegiatan Mahasiswa</h2>
+            <ul>
+                <li>Seminar Teknologi</li>
+                <li>Workshop Pemrograman</li>
+                <li>Organisasi Mahasiswa</li>
+            </ul>
+        </section>
+
+        <section id="kontak">
+            <h2>Kontak</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="nama">Nama: </label>
+                    <input type="text" id="nama" name="nama">
+                </p>
+                <p>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email">
+                </p>
+                <p>
+                    <label for="pesan">Pesan: </label>
+                    <textarea id="pesan" name="pesan" rows="2"></textarea>
+                </p>
+                <p>
+                    <button type="submit">Kirim</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sistem Informasi. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
