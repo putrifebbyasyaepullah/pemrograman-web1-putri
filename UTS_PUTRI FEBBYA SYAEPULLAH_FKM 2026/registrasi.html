@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrasi | Festival Kreativitas Mahasiswa 2026</title>
+  <link rel="icon" type="image/png" href="images/logo-unpam.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html"><img class="brand-logo" src="images/logo-unpam.png" alt="Logo Universitas Pamulang" width="36" height="36"><span class="brand-text">Festival Kreativitas <span>Mahasiswa 2026</span></span></a>
+      <nav aria-label="Menu utama">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="juri.html">Juri</a></li>
+          <li><a href="jadwal.html">Jadwal</a></li>
+          <li><a href="dokumentasi.html">Dokumentasi</a></li>
+          <li><a href="registrasi.html" class="active" aria-current="page">Registrasi</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head center">
+      <div class="wrap">
+        <h1>Registrasi Peserta</h1>
+        <p>Lengkapi formulir berikut untuk mendaftar sebagai peserta festival.</p>
+      </div>
+    </section>
+
+    <section class="block reg">
+      <div class="wrap form-wrap">
+        <div class="form-card">
+          <form action="registrasi.html" method="get">
+            <div class="field">
+              <label for="nama">Nama Lengkap</label>
+              <input type="text" id="nama" name="nama" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="nim">NIM</label>
+              <input type="text" id="nim" name="nim" inputmode="numeric" pattern="[0-9]{6,20}" title="NIM berisi angka" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+            <fieldset class="field">
+              <legend>Jenis Kelamin</legend>
+              <div class="radios">
+                <label><input type="radio" name="gender" value="Laki-laki" required> Laki-laki</label>
+                <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+              </div>
+            </fieldset>
+            <div class="field">
+              <label for="sesi">Pilihan Sesi</label>
+              <select id="sesi" name="sesi" required>
+                <option value="">Pilih sesi</option>
+                <option>Pembukaan Festival (Senin, 08.00–09.30)</option>
+                <option>Presentasi Inovasi Digital (Senin, 09.30–11.00)</option>
+                <option>Pameran Karya Mahasiswa (Selasa, 08.00–09.30)</option>
+                <option>Pengumuman Pemenang (Selasa, 09.30–11.00)</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="status">Status Peserta</label>
+              <select id="status" name="status" required>
+                <option value="">Pilih status</option>
+                <option>Mahasiswa</option>
+                <option>Umum</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="minat">Pengalaman atau Minat Bisnis Digital</label>
+              <textarea id="minat" name="minat" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-blue">Registrasi</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Festival Kreativitas Mahasiswa 2026 &copy; Program Studi Sistem Informasi - Universitas Pamulang</p>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

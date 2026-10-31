@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Foto dan Video pada Halaman Web</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 20px 40px;
+            line-height: 1.4;
+        }
+
+        h1 { font-size: 26px; font-weight: bold; }
+        h2 { font-size: 20px; font-weight: bold; margin-top: 20px; }
+        p { margin-top: 5px; margin-bottom: 10px; }
+        hr { border: none; border-top: 1px solid #777; margin: 15px 0; }
+        img, video, iframe { display: block; margin: 10px 0; }
+    </style>
+</head>
+<body>
+
+    <h1>Foto dan Video pada Halaman Web</h1>
+    <p>Pada halaman ini kita akan belajar menampilkan foto dan video menggunakan HTML.</p>
+
+    <hr>
+
+    <h2>1.Menampilkan Foto</h2>
+    <p>Foto pada halaman web dapat menggunakan tag &lt;img&gt;</p>
+    <img src="pemandangan1.png" alt="Pemandangan 1" width="300" height="300">
+
+    <h2>2. Foto dengan Ukuran</h2>
+    <p>Ukuran pada foto dapat diatur dengan atribut width dan height</p>
+    <img src="pemandangan2.png" alt="Pemandangan 2" width="330" height="250">
+
+    <h2>3. Foto dengan Link</h2>
+    <p>Foto juga dapat digabungkan dengan tag link, silahkan klik foto berikut.</p>
+    <a href="#">
+        <img src="profile.png" alt="Profile Link" width="160" height="160">
+    </a>
+
+    <h2>4.Video</h2>
+    <p>Video dapat ditampilkan menggunakan tag &lt;video&gt;</p>
+    <video width="420" height="240" controls>
+        <source src="video1.mp4" type="video/mp4">
+        Browser Anda tidak mendukung tag video.
+    </video>
+
+    <h2>5. Video Autoplay</h2>
+    <video width="420" height="240" autoplay loop muted>
+        <source src="video2.mp4" type="video/mp4">
+        Browser Anda tidak mendukung tag video.
+    </video>
+
+    <h2>6. Video YouTube</h2>
+    <video width="450" height="250" controls>
+        <source src="video3.mp4" type="video/mp4">
+        Browser Anda tidak mendukung tag video.
+    </video>
+
+</body>
+</html>
