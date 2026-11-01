@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Class - Putri Febbya</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f4f6;
+    color: #493d47;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 220px;
+    background: #806477;
+    color: white;
+    padding: 30px 20px;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 55px;
+}
+
+.logo span {
+    color: #eadde5;
+}
+
+.sidebar small {
+    color: #eadde5;
+    letter-spacing: 2px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 13px;
+    margin-top: 12px;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: #a98b9f;
+}
+
+.main {
+    flex: 1;
+    min-width: 0;
+}
+
+.topbar {
+    background: white;
+    padding: 20px 30px;
+    border-bottom: 1px solid #eadde5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topbar span {
+    color: #806477;
+    font-size: 12px;
+}
+
+.content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 35px 30px;
+}
+
+.welcome {
+    background: #eadde5;
+    color: #5d4857;
+    padding: 35px;
+    border-radius: 15px;
+}
+
+.welcome small {
+    color: #987b90;
+    letter-spacing: 2px;
+}
+
+.welcome h1 {
+    margin: 15px 0 10px;
+    font-size: 29px;
+}
+
+.welcome p {
+    color: #806f7b;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.profile {
+    display: flex;
+    gap: 15px;
+    margin: 22px 0 35px;
+}
+
+.info {
+    background: white;
+    border: 1px solid #eadde5;
+    border-radius: 10px;
+    padding: 18px;
+    flex: 1;
+}
+
+.info small {
+    color: #a28d9c;
+}
+
+.info strong {
+    display: block;
+    margin-top: 8px;
+    color: #806477;
+    font-size: 14px;
+}
+
+.heading {
+    margin-bottom: 20px;
+}
+
+.heading h2 {
+    color: #665263;
+    font-size: 22px;
+}
+
+.heading p {
+    color: #a28d9c;
+    font-size: 13px;
+    margin-top: 7px;
+}
+
+.lessons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 13px;
+}
+
+.lesson {
+    background: white;
+    border: 1px solid #eadde5;
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+    color: #665263;
+    transition: .2s;
+}
+
+.lesson:hover {
+    background: #f1e7ed;
+    transform: translateY(-3px);
+}
+
+.lesson span {
+    display: block;
+    color: #a98b9f;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.lesson strong {
+    font-size: 14px;
+}
+
+.uts {
+    margin-top: 28px;
+    padding: 25px;
+    background: #e5d5df;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.uts h2 {
+    color: #665263;
+    font-size: 20px;
+}
+
+.uts p {
+    color: #806f7b;
+    font-size: 13px;
+    margin-top: 7px;
+}
+
+.uts a {
+    background: #806477;
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 7px;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #a28d9c;
+    font-size: 12px;
+}
+
+@media(max-width: 650px) {
+    .container {
+        display: block;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 18px;
+    }
+
+    .logo {
+        margin-bottom: 12px;
+    }
+
+    .sidebar small,
+    .sidebar a {
+        display: none;
+    }
+
+    .content {
+        padding: 22px 15px;
+    }
+
+    .welcome {
+        padding: 25px;
+    }
+
+    .welcome h1 {
+        font-size: 24px;
+    }
+
+    .profile {
+        flex-direction: column;
+    }
+
+    .lessons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .uts {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+        <div class="logo">MY<span>CLASS.</span></div>
+
+        <small>MENU UTAMA</small>
+        <a href="#" class="active">Dashboard</a>
+        <a href="#materi">Daftar Pertemuan</a>
+        <a href="#uts">UTS</a>
+    </aside>
+
+    <div class="main">
+
+        <div class="topbar">
+            <strong>Dashboard</strong>
+            <span>PEMROGRAMAN WEB 1</span>
+        </div>
+
+        <main class="content">
+
+            <section class="welcome">
+                <small>MY LEARNING PORTFOLIO</small>
+                <h1>Halo, Selamat Datang!</h1>
+                <p>
+                    Halaman ini berisi hasil pembelajaran dan
+                    praktik saya dalam mata kuliah Pemrograman Web 1.
+                </p>
+            </section>
+
+            <section class="profile">
+                <div class="info">
+                    <small>Nama Mahasiswa</small>
+                    <strong>Putri Febbya Syaepullah</strong>
+                </div>
+
+                <div class="info">
+                    <small>Mata Kuliah</small>
+                    <strong>Pemrograman Web 1</strong>
+                </div>
+            </section>
+
+            <section id="materi">
+                <div class="heading">
+                    <h2>Daftar Pertemuan</h2>
+                    <p>Pilih pertemuan untuk melihat hasil praktik.</p>
+                </div>
+
+                <div class="lessons">
+                    <a class="lesson" href="PERTEMUAN_1/"><span>01 / MATERI</span><strong>Pertemuan 1</strong></a>
+                    <a class="lesson" href="PERTEMUAN_2/"><span>02 / MATERI</span><strong>Pertemuan 2</strong></a>
+                    <a class="lesson" href="PERTEMUAN_3/"><span>03 / MATERI</span><strong>Pertemuan 3</strong></a>
+                    <a class="lesson" href="PERTEMUAN_4/"><span>04 / MATERI</span><strong>Pertemuan 4</strong></a>
+                    <a class="lesson" href="PERTEMUAN_5/"><span>05 / MATERI</span><strong>Pertemuan 5</strong></a>
+                    <a class="lesson" href="PERTEMUAN_6/"><span>06 / MATERI</span><strong>Pertemuan 6</strong></a>
+                    <a class="lesson" href="PERTEMUAN_7/"><span>07 / MATERI</span><strong>Pertemuan 7</strong></a>
+                    <a class="lesson" href="PERTEMUAN_8/"><span>08 / MATERI</span><strong>Pertemuan 8</strong></a>
+                    <a class="lesson" href="PERTEMUAN_9/"><span>09 / MATERI</span><strong>Pertemuan 9</strong></a>
+                    <a class="lesson" href="PERTEMUAN_10/"><span>10 / MATERI</span><strong>Pertemuan 10</strong></a>
+                    <a class="lesson" href="PERTEMUAN_11/"><span>11 / MATERI</span><strong>Pertemuan 11</strong></a>
+                    <a class="lesson" href="PERTEMUAN_12/"><span>12 / MATERI</span><strong>Pertemuan 12</strong></a>
+                </div>
+            </section>
+
+            <section class="uts" id="uts">
+                <div>
+                    <h2>Ujian Tengah Semester</h2>
+                    <p>Lihat hasil pengerjaan UTS Pemrograman Web 1.</p>
+                </div>
+
+                <a href="UTS_PUTRI%20FEBBYA%20SYAEPULLAH_FKM%202026/">
+                    Lihat UTS →
+                </a>
+            </section>
+
+        </main>
+
+        <footer>
+            © 2026 Putri Febbya Syaepullah | Pemrograman Web 1
+        </footer>
+
+    </div>
+</div>
+
+</body>
+</html>
