@@ -1,0 +1,109 @@
+/* Pengaturan halaman */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #081b33, #123e68);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Judul halaman */
+h1 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Kotak aplikasi */
+.container {
+    background-color: #f4f8fc;
+    width: 360px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Judul aplikasi */
+h2 {
+    color: #102f50;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+/* Label */
+label {
+    display: block;
+    color: #193b5c;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* Kotak input */
+input {
+    width: 100%;
+    padding: 13px;
+    box-sizing: border-box;
+    border: 1px solid #b6c9dc;
+    border-radius: 7px;
+    background-color: white;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Efek input */
+input:focus {
+    outline: none;
+    border: 2px solid #1687d9;
+    box-shadow: 0 0 5px rgba(22, 135, 217, 0.2);
+}
+
+/* Tombol */
+button {
+    width: 100%;
+    padding: 13px;
+    background-color: #123e68;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efek tombol */
+button:hover {
+    background-color: #1687d9;
+}
+
+/* Tampilan hasil */
+#hasil {
+    margin-top: 22px;
+    padding: 14px;
+    background-color: #e1edf8;
+    color: #102f50;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+/* Tampilan HP */
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 22px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
